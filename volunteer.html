@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Smoothy <span><span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+	      <div class="collapse navbar-collapse" id="navbarResponsive">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-info-items d-none d-lg-flex"></div>
+            <!-- end -->
+
+            <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                <span class="info-icon mx-lg-3"><i class="fa fa-phone"></i></span>
+                <p class="mb-0">08067488682</p>
+            </div>
+            <!-- end -->
+            <div id="cart-info" class="align-items-center d-flex justify-content-between mx-lg-5">
+                <span class="cart-icon mr-lg-3">
+                    <i class="fa fa-shopping-cart"></i>
+                </span>
+                <p class="mb-0 text-capitalize"><span id="itemCount">2</span> items - N <span class="item-total">200</span></p>
+            </div>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <section class="heading">
+        <div class="container">
+            <h3>volunteer</h3>
+        </div>
+    </section>
+
+    <section class="apply">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h4 class="sub-heading">Apply to become a volunteer</h4>
+                    <p>
+                        if you are interested in helping more women become active participants and leaders in technology
+                    </p>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Read more >></button>
+                </div>
+                <div class="col-md-6 col-12">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <h4 class="sub-heading">Benefits of Being a Volunteer</h4>
+
+                    <ul class="benefit-list">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, doloribus?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+            <h4 class="sub-heading">
+                application form
+            </h4>
+          <p class="text-center">Please fill the form below to become a volunteer</p>
+
+          <form action="">
+            <div class="form-group">
+                <label for="full-Name">Full Name</label>
+                <input type="text" class="form-control" id="full-name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="email">Phone No.</label>
+                <input type="tel" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age">
+            </div>
+            <div class="form-group">
+                <label for="email">Company Name</label>
+                <input type="text" class="form-control" id="company">
+            </div>
+            <div class="form-group">
+                <label for="email">Interest</label>
+                <input type="text" class="form-control" id="interest">
+            </div>
+            <div class="form-group">
+                <label for="bio">Brief Story About Yourself</label>
+                <textarea class="form-control" name="" id="bio"></textarea>
+          
+            </div>
+            
+
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    
+        </div>
+    </div>
+    <footer class="py-3">
+
+        <p class="text-center">built by <strong>Ogochukwu Odom</strong>&copy 2019</p>
+        
+    </footer>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
