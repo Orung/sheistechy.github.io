@@ -1,0 +1,370 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+.spec{
+    background-color: #fff;
+    display: none;
+    position:relative;
+
+}
+.blue-rin{
+    color: #9c27b0;
+}
+.color-text{
+        padding-left: 19px;
+    padding-right: 19px;
+}
+.watch-sec{
+    background-color: #b500b5;
+    width: 108%;
+    margin-left: -14px;
+    border-radius: 4px;
+    text-align:center; 
+    color: #fff;    
+}
+.favorite-sec{
+    background-color: #e8ebf5;
+    width: 108%;
+    margin-left: -14px;
+    border-radius: 4px;
+    text-align:center; 
+}
+
+.hover-micky:hover .spec {
+               display: block;
+            position: absolute;
+            z-index: 999;
+            width: 199px;
+            top: 2px;
+            left: 100px;
+            padding-right: 19px;
+            padding-left: 26px;
+            border: 1px solid darkgray;
+            /* border-radius: 11px; */
+            left: 11px;
+            color: #000;
+
+
+
+}
+
+
+    
+}
+.color-gre{
+    background-color: #e8ebf5;
+    width: 108%;
+    margin-left: -14px;
+    border-radius: 4px;
+    text-align:center;
+}
+.btn.btn-success, .btn.btn-success:hover, .btn.btn-success:focus, .btn.btn-success:active, .btn.btn-success.active, .btn.btn-success:active:focus, .btn.btn-success:active:hover, .btn.btn-success.active:focus, .btn.btn-success.active:hover, .open > .btn.btn-success.dropdown-toggle, .open > .btn.btn-success.dropdown-toggle:focus, .open > .btn.btn-success.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-success, .navbar .navbar-nav > li > a.btn.btn-success:hover, .navbar .navbar-nav > li > a.btn.btn-success:focus, .navbar .navbar-nav > li > a.btn.btn-success:active, .navbar .navbar-nav > li > a.btn.btn-success.active, .navbar .navbar-nav > li > a.btn.btn-success:active:focus, .navbar .navbar-nav > li > a.btn.btn-success:active:hover, .navbar .navbar-nav > li > a.btn.btn-success.active:focus, .navbar .navbar-nav > li > a.btn.btn-success.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-success.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-success.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-success.dropdown-toggle:hover{
+    background-color: black;
+}
+
+.hd-p{
+    padding:0px ;
+}
+.paste-mo{
+    text-align: center;
+}
+.modal .modal-header .close {
+    color: #9C27B0;
+    font-size: 18px;
+    }
+.bottom-border{
+border-bottom: 1px solid 1px solid rgba(128, 128, 128, 0.22);
+}
+ .footer-account{
+
+margin-top: 22px;
+ padding-bottom: 26px;
+}
+.tab-content>.active{
+    border-bottom: 0px;
+}
+.img-left-video{
+  margin-left: 15px;
+}
+
+
+
+.hover-micky-1:hover .spec-1 {
+               display: block;
+            position: absolute;
+            z-index: 999;
+            width: 199px;
+            top: -14px;
+            left: 100px;
+            padding-right: 19px;
+            padding-left: 26px;
+            border: 1px solid darkgray;
+            /* border-radius: 11px; */
+            left: -11px;
+            color: #000;
+        }
+
+.spec-1{
+    background-color: #fff;
+    display: none;
+    position:relative;
+
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the lis inside the tab */
+.tab li {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of lis on hover */
+.tab li:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab li.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.plans{
+        background: #fff;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    text-align: center
+}
